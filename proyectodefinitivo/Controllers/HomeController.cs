@@ -34,18 +34,22 @@ namespace proyectodefinitivo.Controllers
         public IActionResult Index1()
         {
             Floristeria2Context _context = new Floristeria2Context();
+            var Listarc = _context.Productos.ToList();
             var Listarclientes = _context.Clientes.ToList();
             //ViewBang.Usuario = ListarUsuarios;
             return View(Listarclientes);
+            //return View(Listarc);
+
+
         }
 
-        public IActionResult Index()
-        {
-            Floristeria2Context _context = new Floristeria2Context();
-            var Listarc = _context.Productos.ToList();
-            //ViewBang.Usuario = ListarUsuarios;
-            return View(Listarc);
-        }
+        //public IActionResult Index1()
+        //{
+        //    Floristeria2Context _context = new Floristeria2Context();
+        //    var Listarc = _context.Productos.ToList();
+        //    //ViewBang.Usuario = ListarUsuarios;
+        //    return View(Listarc);
+        //}
         //var listarproducto = _context.Productos.ToList(); 
         //return View(listarproducto);
 
