@@ -15,10 +15,6 @@ namespace proyectodefinitivo.Controllers
         }
 
 
-        //public IActionResult Index1()
-        //{
-        //    return View();
-        //}
 
         public IActionResult Privacy()
 
@@ -33,16 +29,6 @@ namespace proyectodefinitivo.Controllers
         [HttpGet]
        
 
-        //[HttpGet]
-        //public IActionResult Index1()
-        //{
-        //    Floristeria2Context _context = new Floristeria2Context();
-        //    var ListaProd = _context.Productos.ToList();
-        //    var Listarclientes = _context.Clientes.ToList();
-
-        //    var modelo = new { Productos = ListaProd, Clientes = Listarclientes };
-        //    return View(modelo);
-        //}
 
         [HttpGet]
         public IActionResult Index()
@@ -54,8 +40,8 @@ namespace proyectodefinitivo.Controllers
             return View(ListarProd);
 
         }
-        
-      
+
+
         [HttpGet]
         public IActionResult Ventas()
         {
@@ -64,20 +50,8 @@ namespace proyectodefinitivo.Controllers
             var Listarventa = _context.Venta.ToList();
             //ViewBang.Usuario = ListarUsuarios;
             return View(Listarventa);
-
         }
-        //}
-        //    public IActionResult Index1()
-        //    {
-        //        Floristeria2Context _context = new Floristeria2Context();
-        //        var Listarc = _context.Productos.ToList();
-        //        //ViewBang.Usuario = ListarUsuarios;
-        //        return View(Listarc);
-
-        //        var listarproducto = _context.Productos.ToList(); 
-        //            return View(listarproducto);
-        //}
-
+      
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
