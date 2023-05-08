@@ -12,9 +12,47 @@ html {
   position: relative;
   min-height: 100%;
 }
+navbar {
+    background-color: #3f3f3f;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
 
+.navbar-brand {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+    .nav-link:hover,
+    .nav-link:focus {
+        background-color: #ffffff;
+        color: #3f3f3f;
+        text-decoration: none;
+    }
+
+.navbar-toggler {
+    background-color: #ffffff;
+    border: none;
+    color:   #3f3f3f;
+}
 body {
-  margin-bottom: 60px;
+    background-image: url('../img/Fondo de la pagina.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 .top-menu {
     display: flex;
