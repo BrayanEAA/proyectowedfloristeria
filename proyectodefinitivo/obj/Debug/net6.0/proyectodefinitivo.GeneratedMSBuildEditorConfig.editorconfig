@@ -16,12 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Brayan\Documents\GitHub\proyectowedfloristeria\proyectodefinitivo
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Brayan/Documents/GitHub/proyectowedfloristeria/proyectodefinitivo/Views/Home/Index1.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleDEuY3NodG1s
+[C:/Users/Brayan/Documents/GitHub/proyectowedfloristeria/proyectodefinitivo/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Brayan/Documents/GitHub/proyectowedfloristeria/proyectodefinitivo/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Brayan/Documents/GitHub/proyectowedfloristeria/proyectodefinitivo/Views/Home/Ventas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWZW50YXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Brayan/Documents/GitHub/proyectowedfloristeria/proyectodefinitivo/Views/Shared/Error.cshtml]

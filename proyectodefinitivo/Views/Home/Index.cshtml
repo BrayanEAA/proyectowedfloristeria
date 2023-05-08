@@ -12,23 +12,6 @@
     <link rel="stylesheet" type="text/css" href="~/css/">
 </head>
 
-<div class="top-menu">
-    <div class="logo-container">
-        <img src="logo.png" alt="Logo" class="logo">
-    </div>
-    <div class="menu-container">
-        <ul class="menu-list">
-            <li class="menu-item"><a href="#">Principal</a></li>
-            <li class="menu-item"><a href="#">Productos</a></li>
-            <li class="menu-item"><a href="#">Acerca de nosotros</a></li>
-        </ul>
-        <div class="search-container">
-            <input type="text" placeholder="Buscar...">
-            <button class="search-button">Buscar</button>
-        </div>
-    </div>
-</div>
-
 <body style="background-image: url('img/Fondo\ de\ la\ pagina.jpeg">
     <div class="contenido">
         <h1>Bienvenido a PETALO</h1>
@@ -40,11 +23,11 @@
             <table>
                 <thead>
                     <tr>
-                        <th>IdVenta</th>
-                        <th>IdCliente</th>
                         <th>IdProducto</th>
-                        <th>cantidad</th>
-                        <th>fechapedido</th>
+                        <th>Nombre del Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Descripcion</th>
                         <th>total</th>
                         <th>Acciones</th>
                     </tr>
@@ -52,19 +35,25 @@
                 <tbody>
                 @foreach (var iten in Model){
                     <tr>
-                        <td><%= IdVenta %></td>
-                        <td>@iten.NombreCliente </td>
-                        <td>@iten.Direccion </td>
+                        <td>@iten.IdProducto</td>
+                        <td>@iten.NombreProducto </td>
+                        <td>@iten.Precio </td>
+                        <td>@iten.Descripcion</td>
                         <td></td>
-                        <td><%= fechapedido %></td>
-                        <td><%= total %></td>
+                        <td></td>
                         <td>
                             
                             <button>Modificar</button>
                             <button>Ver</button>
                         </td>
                     </tr>
+
 }
+                    
+                    <tr>
+                        <td></td>
+                    </tr>
+                    
                 </tbody>
             </table>
         </div>

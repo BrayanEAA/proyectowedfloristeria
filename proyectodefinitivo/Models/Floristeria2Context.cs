@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace proyectodefinitivo.Models;
 
 public partial class Floristeria2Context : DbContext

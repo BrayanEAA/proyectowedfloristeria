@@ -1,7 +1,9 @@
-﻿@{
-    ViewData["Title"] = "";
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Home Page";
 }
-<h1>@ViewData["Title"]</h1>
 
 <html class="no-js" lang="en" dir="ltr">
 <head runat="server">
@@ -10,10 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PÉTALO</title>
     <link rel="shortcut icon" href="img/Icono Petal.jpeg">
-    <link rel="stylesheet" type="text/css" href="~/css/">
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
 </head>
 
-<body style="background-image: url(''../../wwwroot/img/Fondo de la pagina.jpeg'">
+<body style="background-image: url('img/Fondo\ de\ la\ pagina.jpeg">
     <div class="contenido">
         <h1>Bienvenido a PETALO</h1>
         <p>Official Website.</p>
@@ -24,11 +26,11 @@
         <table>
             <thead>
                 <tr>
+                    <th>IdVenta</th>
+                    <th>Idproducto</th>
                     <th>IdCliente</th>
-                    <th>Nombre de Cliente</th>
-                    <th>Telefono</th>
-                    <th>Email</th>
-                    <th>Direccion</th>
+                    <th>cantidad</th>
+                    <th>Total</th>
                     <th>total</th>
                     <th>Acciones</th>
                 </tr>
@@ -37,11 +39,11 @@
                 @foreach (var iten in Model)
                 {
                     <tr>
-                        <td>@iten.IdCliente</td>
-                        <td>@iten.NombreCliente </td>
-                        <td>@iten.Telefono </td>
-                        <td>@iten.Email</td>
-                        <td>@iten.Direccion</td>
+                        <td>@iten.IdVenta</td>
+                        <td>@iten.IdProducto </td>
+                        <td>@iten.IdCliente </td>
+                        <td>@iten.Cantidad</td>
+                        <td>@iten.Total</td>
                         <td></td>
                         <td>
 
@@ -77,4 +79,5 @@
     </div>
 
 </body>
-</html> 
+</html>
+
